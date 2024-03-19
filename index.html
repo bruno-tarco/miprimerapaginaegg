@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primera web</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/9dc7b6c418.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c9b87a4bee.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header id="encabezado">
+            <h1 class="logo">
+                <a href="https://egg.live/" class="fuente-acento">Mi Web</a>
+            </h1>
+            <!-- <a href="index.html"><i class="fa-solid fa-jet-fighter-up"></i></a> -->
+            <label for="check" class="checkbtn">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <nav class="navbar">
+                <ul class="menu">
+                    <li><a href="">Inicio</a></li>
+                    <li class="listaAcercademi"><a class="acercaDeMi" href="">Acerca de mí</a></li>
+                    <li><a href="">Trabajos</a></li>
+                    <li><a href="">Servicios</a></li>
+                    <li><a href="">Contacto</a></li>
+
+                </ul>
+
+            </nav>
+        </header>
+        <main id="seccion-principal">
+            <section class="seccion-1">
+                <div class="acerca-de">
+                    <h2>Acerca de mí</h2>
+                    <p>Bienvenido a mi web</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui reiciendis voluptas ullam. Quam nisi
+                        expedita accusantium architecto dolor consequatur laudantium enim quibusdam alias neque,
+                        doloremque praesentium porro. Minus, earum labore?
+                    </p>
+                </div>
+                <div class="acerca-imagen">
+                    <img src="img/images.jpg" alt="imagen portada">
+                </div>
+            </section>
+
+            <section class="seccion-2">
+                <div>
+                    <h2>Marca favorita</h2>
+                    <img class="imagen1" src="img/logo_creado.png" alt="imagen portada">
+
+                </div>
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui reiciendis voluptas ullam. Quam nisi
+                        expedita accusantium architecto dolor consequatur laudantium enim quibusdam alias neque,
+                        doloremque praesentium porro. Minus, earum labore?
+                    </p>
+                </div>
+
+            </section>
+            <br>
+            <section class="seccion-3">
+                <form action="" method="get" class="formulario" id="form">
+                    <div class="form-row">
+                        <label for="nombre">Nombre</label>
+                        <input id="nombre" name="nombre" type="text" />
+                    </div>
+                    <div class="form-row">
+                        <label for="email">Email</label>
+                        <input required placeholder="pepe@gmail.com" id="email" name="email" type="email"
+                            placeholder="pepe@gmail.com" />
+                    </div>
+                    <div class="form-row">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje"></textarea>
+                    </div>
+                    <div class="form-row">
+                        <button>Enviar</button>
+                    </div>
+                    <p class="alertas" id="alertas"></p>
+                </form>
+            </section>
+
+        </main>
+
+        <footer>
+            <div>
+                <h2>CONTACTO</h2>
+                <img class="imagen1" src="img/logo_creado.png" alt="imagen portada">
+
+            </div>
+            <div>
+
+                <nav>
+                    <ul class="lista_contactame">
+                        <li><a href="asd">Menestras</a></li>
+                        <li><a href="asd">Menestras</a></li>
+                        <li><a href="asd">Menestras</a></li>
+                    </ul>
+
+                </nav>
+
+
+            </div>
+
+
+        </footer>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

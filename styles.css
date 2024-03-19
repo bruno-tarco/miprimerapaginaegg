@@ -1,0 +1,353 @@
+body,
+footer {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+
+
+}
+
+
+#encabezado h1 {
+    margin-left: 15px;
+
+}
+
+.fuente-acento {
+    color: burlywood;
+
+}
+/* 
+#seccion-principal,
+footer {
+    margin-left: 8px;
+    margin-right: 8px;
+} */
+
+.seccion-1,
+.seccion-2,
+footer {
+    background-color: #eeeeee;
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+    padding: 2em;
+}
+
+@media (max-width:768px) {
+
+    .seccion-1,
+    .seccion-2,
+    footer {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+.seccion-2 {
+    background-color: #bfccd1;
+    padding: 2em;
+    gap: 30px;
+
+}
+
+footer {
+    margin: 10px;
+    background-color: #a5ccb2;
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+}
+
+@media (max-width:768px) {
+
+    footer {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+
+footer a {
+    text-decoration: none;
+}
+
+.checkbtn {
+    font-size: 25px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+/* 
+/* media queries */
+
+@media (max-width: 768px) {
+
+    /* Aquí puedes escribir los estilos que se aplicarán en pantallas más pequeñas */
+    header {
+        background-color: burlywood;
+    }
+
+    .checkbtn {
+        display: block;
+    }
+
+    .navbar {
+        height: 0vh;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background: #2c3e50;
+        text-align: center;
+
+        transition: all 0.5s;
+        overflow: hidden;
+    }
+
+    .navbar ul.menu {
+        float: none;
+        display: block;
+        width: 174px;
+        margin: 0 auto;
+        opacity: 0;
+    }
+
+    .navbar ul.menu li a:hover {
+        color: #b59a61;
+    }
+
+    /* ACTIVE */
+    .navbar.active {
+        height: 100vh;
+    }
+
+    .navbar.active ul.menu {
+        opacity: 1;
+    }
+}
+
+
+nav ul li {
+    font-size: 14px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+nav ul.menu {
+    float: right;
+}
+
+/* nav ul.menu li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul.menu li a {
+    color: #eee;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 7px 7px;
+} */
+
+
+.acerca-imagen {
+    display: flex;
+    align-items: center;
+
+}
+
+.imagen1 {
+    width: 200px;
+}
+
+ol,
+ul {
+    list-style: none;
+    text-decoration: none;
+}
+
+.lista_contactame li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-style: normal;
+
+    /* Opcional: mantener el color del texto original */
+}
+
+.lista_contactame li {
+
+    padding: 10px;
+}
+
+.lista_contactame li a:hover {
+    text-decoration: dashed;
+    color: rgb(85, 85, 176);
+    /* Puedes cambiar el color al que prefieras */
+    font-size: larger;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    height: 75px;
+    background-color: rgba(148, 104, 54, 0.85);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 1em;
+
+}
+
+header a i {
+    color: white;
+    font-size: 3em;
+    padding: 0.5em;
+}
+
+header nav ul {
+    display: flex;
+    gap: 2em;
+}
+
+header nav ul li a {
+    color: white;
+}
+
+
+------------- Formulario ------------- */
+
+.formulario {
+    background-color: #f6f7f8;
+    border: 1px solid #d6d9dc;
+    border-radius: 3px;
+
+    width: 80%;
+    padding: 50px;
+    margin: 30px 0 40px 0;
+}
+
+/* ------------- Campos del Formulario ------------- */
+
+.form-row {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.form-row input[type="text"],
+.form-row input[type="email"],
+button {
+    background-color: #bdbdbd;
+    border: 0;
+    border-radius: 6px;
+    width: 100%;
+    padding: 7px;
+    font-size: 14px;
+}
+
+.form-row label {
+    margin-bottom: 3px;
+    text-align: initial;
+}
+
+/* ------------- Para Pantallas de más de 700px ------------- */
+@media only screen and (min-width: 700px) {
+    .form-header {
+        padding: 50px;
+    }
+
+    .form-row {
+        flex-direction: row;
+        align-items: flex-start;
+        margin-bottom: 20px;
+    }
+
+    .form-row input[type="text"],
+    .form-row input[type="email"],button,#mensaje {
+        width: 250px;
+        height: initial;
+    }
+
+    .form-row label {
+        text-align: right;
+        width: 120px;
+        margin-top: 7px;
+        padding-right: 20px;
+    }
+}
+
+
+.form-row textarea {
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 14px;
+
+
+    background-color: #bdbdbd;
+    border: 0;
+    border-radius: 6px;
+
+
+    min-height: 200px;
+    margin-bottom: 10px;
+    padding: 7px;
+    resize: none;
+
+
+    width: 100%;
+}
+
+/* ------------- Para Pantallas de más de 700px ------------- */
+
+
+.form-row textarea {
+    width: 250px;
+}
+
+
+/* codigo para boton */
+.form-row button {
+    font-size: 16px;
+    font-weight: bold;
+
+
+    color: #ffffff;
+    background-color: #5995da;
+
+
+    border: none;
+    border-radius: 3px;
+
+
+    padding: 10px 40px;
+    cursor: pointer;
+}
+
+
+.form-row button:hover {
+    background-color: #76aeed;
+}
+
+
+.form-row button:active {
+    background-color: #407fc7;
+}
+
+
+/* ------------- Para Pantallas de más de 700px ------------- */
+
+
+.form-row button {
+    margin-left: 120px;
+}
